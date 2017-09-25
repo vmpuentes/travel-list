@@ -9,6 +9,48 @@
    <title>Travel List</title>
   </head>
   <body>
+    <div class="container">
+     <h1>Travel List</h1>
 
-  </body>
+     <div class="row">
+       <div class="col-md-6">
+         <h2>Add a place:</h2>
+         <form id="new-place">
+           <div class="form-group">
+             <label for="new-location">Location</label>
+             <input type="text" class="form-control" id="new-location" required>
+           </div>
+           <div class="form-group">
+             <label for="new-landmark">Landmark</label>
+             <input type="text" class="form-control" id="new-landmark" required>
+           </div>
+           <div class="form-group">
+             <label for="new-timeofyear">Time Of Year</label>
+             <input type="text" class="form-control" id="new-timeofyear" required>
+           </div>
+           <div class="form-group">
+             <label for="new-notes">Notes</label>
+             <input type="text" class="form-control" id="new-notes" required>
+           </div>
+
+           <button type="submit" class="btn">Add</button>
+         </form>
+
+         <h2>My Places:</h2>
+         <ul id="places">
+
+         </ul>
+       </div>
+       <div class="col-md-6">
+         <div id="show-place">
+           <h2></h2>
+
+           <p>Location: <span class="location"></span></p>
+           <p>Landmark: <span class="landmark"></span></p>
+           <p>Time Of Year: <span class="timeofyear"></span></p>
+           <p>Notes: <span class="notes"></span></p>
+         </div>
+       </div>
+     </div>
+  </div>
 </html>
